@@ -1,0 +1,55 @@
+/* so that the whole webpage can be edited */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*body takes whole screen*/
+    margin: 0;
+    background-color: white;
+}
+
+/* profile part */
+/* profile image */
+img{
+    border-radius: 60%;
+} 
+/* roll number colour */
+.g1{
+    color: green;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: radial-gradient(rgba(98, 98, 98, 0),rgba(80,80,80,0.5));
+    gap: 30px;
+}
+/* for gap between profile pic and details */
+.profile_pic img {
+    margin-right: 10px;
+}
+.details {
+    padding: 10px;
+    background-color: white;
+    text-align: right;
+    border-radius: 5%;
+}
+
+/* subject part */
+.subjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: radial-gradient(rgba(98, 98, 98, 0),rgba(80,80,80,0.5));
+    flex-wrap: wrap;
+}
+.sub1{
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- default vs code html stuff -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance page</title>
+    <link rel="stylesheet" href="back.css">
+</head>
+
+<body>
+
+    <!-- profile as a division -->
+    <div class="profile">
+        <!-- profile image -->
+        <div class="profile_pic">
+            <img src="profile page.jpg" alt="profile picture" width="170">
+        </div>
+        <div class="details">
+            <!-- profile details -->
+            <h3 class="g2">Aryan Gupta</h3>
+            <h3 class="g1">230150003</h3>
+            <h3 class="g2">Data Science and Artificial Intelligence</h3>
+        </div>
+    </div>
+    
+    
+    <!-- subjects as three different tables -->
+
+    <div class="subjects">
+
+        <!-- table 1- subject 1 -->
+        <table class="sub1" id="head01">
+            <thead>
+                <tr>
+                    <td colspan="2" id="head01" class="subject"><b>Data Structures and algorithms</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- buttons -->
+                <tr>
+                    <td><button id="11" class="present" onclick="changeColor('head01', 'rgba(0,255,0,0.5)')"> Present</button></td>
+                    <td><button id="12" class="absent" onclick="changeColor('head01', 'rgba(255,0,0,0.5)')"> Absent</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- table 2-subject 2 -->
+        <table class="sub1" id="head02">
+            <thead>
+                <tr>
+                    <td colspan="2" id="head02" class="subject"><b>Computer Networks</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- buttons -->
+                <tr>
+                    <td><button id="21" class="present" onclick="changeColor('head02', 'rgba(0,255,0,0.5)')"> Present</button></td>
+                    <td><button id="22" class="absent" onclick="changeColor('head02', 'rgba(255,0,0,0.5)')"> Absent</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- table 3-subject 3 -->
+        <table class="sub1" id="head03">
+            <thead>
+                <tr>
+                    <td colspan="2" id="head03" class="subject"><b>Digital Communication</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- buttons -->
+                <tr>
+                    <td><button id="31" class="present" onclick="changeColor('head03', 'rgba(0,255,0,0.5)')"> Present</button></td>
+                    <td><button id="32" class="absent" onclick="changeColor('head03', 'rgba(255,0,0,0.5)')"> Absent</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end of the subjects -->
+
+    
+    <!-- writing script for the change in color -->
+    <script>
+        function changeColor(elementid, color) {
+            var targetElement = document.getElementById(elementid);
+            targetElement.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
